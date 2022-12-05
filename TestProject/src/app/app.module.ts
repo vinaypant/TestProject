@@ -2,17 +2,22 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { StudentComponent } from './student/student.component';
-import { TeacherComponent } from './teacher/teacher.component';
+import { AppRoutingModule } from './app-routing.module';
+import { LayoutModule } from './components/layout/layout.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentComponent,
-    TeacherComponent
+    // LayoutComponent,
+    // HeaderComponent,
+    // FooterComponent,
+     
+   
+   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,LayoutModule,AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
