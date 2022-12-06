@@ -4,11 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LayoutModule } from './components/layout/layout.module';
+import { DirectiveModule } from './directives/directive.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent    
     // LayoutComponent,
     // HeaderComponent,
     // FooterComponent,
@@ -17,7 +18,7 @@ import { LayoutModule } from './components/layout/layout.module';
    
   ],
   imports: [
-    BrowserModule,LayoutModule,AppRoutingModule
+    BrowserModule,DirectiveModule,LayoutModule,AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
