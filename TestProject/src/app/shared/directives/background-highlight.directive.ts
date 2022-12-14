@@ -2,11 +2,11 @@ import { Directive, ElementRef, HostListener } from "@angular/core";
 
 
 @Directive({
-selector:'[highlight]'
+selector:'[backgroundHighlight]'
 
 })
 
-export class HighlightDirective{
+export class BackgroundHighlightDirective{
 
     constructor(private eleRef:ElementRef) {
         eleRef.nativeElement.style.background = 'red';

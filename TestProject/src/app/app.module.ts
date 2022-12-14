@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LayoutModule } from './components/layout/layout.module';
-import { DirectiveModule } from './directives/directive.module';
+
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import { DirectiveModule } from './directives/directive.module';
    
   ],
   imports: [
-    BrowserModule,DirectiveModule,LayoutModule,AppRoutingModule
+    BrowserModule,LayoutModule,AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 import { StudentEnum } from './enums/student.enum';
 
 @Component({
@@ -10,9 +11,13 @@ import { StudentEnum } from './enums/student.enum';
 export class LayoutComponent implements OnInit {
 
   studentEnum = StudentEnum;
+  
   constructor(private _router: Router) { }
 
   ngOnInit(): void {
+    console.log('API URL',environment.apiURL);
+    console.log('Environment',environment.environmentName);
+    console.log('isproduction',environment.production)
   }
   showStudents(studentCategory: number) {
 

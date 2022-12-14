@@ -1,0 +1,18 @@
+Pipes let us render items in component templates in the way we want.
+
+There are two kinds of pipes in Angular—pure and impure pipes. A pure pipe is a pipe that is
+run when a primitive JavaScript input value like strings, numbers, booleans, symbols or an object 
+reference change.
+
+Pure pipes must be pure functions. Pure functions take an input and return an output. 
+They don’t have side effects. Changes within objects are ignored with pure pipes. When any 
+changes take place, the pipe will run and the latest change will be rendered.
+
+Impure pipes are pipes that can detect changes within objects and arrays.
+
+--------------
+Pure pipes are the pipes which are executed only when a “PURE CHANGE” to the input value is detected.
+
+So impure pipe executes everytime irrespective of source has changed or not. 
+which leads to bad performance. thats why it is not recommneded to use pipes for filtering data.
+

@@ -1,3 +1,12 @@
-<h1 highlight>
-    From pass student
+<h1 backgroundHighlight>
+    From pass student {{'Hello from pipe' | uppercase:1:2}}
 </h1>
+<div>
+    <button (click)="add()">Add number</button>
+</div>
+<div>
+    <ul *ngFor="let num of colorChoices | sortnumber;let i=index;">
+        <li> {{num}} </li>
+    </ul>
+
+</div>

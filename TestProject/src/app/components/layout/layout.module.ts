@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
-import { DirectiveModule } from "src/app/directives/directive.module";
+import { BackgroundHighlightDirective } from "src/app/shared/directives/background-highlight.directive";
+import { SharedModule } from "src/app/shared/shared.module";
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { LayoutRoutingModule } from "./layout-routing.module";
@@ -9,7 +10,7 @@ import { NavMenuComponent } from "./nav-menu/nav-menu.component";
 
 
 @NgModule({
-       imports:[LayoutRoutingModule,DirectiveModule],
+       imports:[LayoutRoutingModule,SharedModule],
        declarations:[FooterComponent,HeaderComponent,NavMenuComponent,LayoutComponent],
        exports:[FooterComponent,HeaderComponent,NavMenuComponent,LayoutComponent],
        
