@@ -10,3 +10,14 @@
     </ul>
 
 </div>
+<div>
+    <app-banner [msg]="bannerMsg" (messageChange)="changeMessage($event)"></app-banner>
+</div>
+<div>
+    <h1>Change Detection</h1>
+    <button (click)="addName()">Add item</button>
+    <ul *ngFor="let obj of items">
+        {{obj.name}}
+    </ul>
+
+</div>

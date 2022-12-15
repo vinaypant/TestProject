@@ -9,10 +9,10 @@ export class UpperCasePipe implements PipeTransform {
         if (!value)
             return value;
         if (typeof value !== 'string') {
-            console.log('invalid data')
+            //console.log('invalid data')
                 //throw invalidPipeArgumentError(UpperCasePipe,value);
         }
-        console.log('args',args);
+        //console.log('args',args);
         return value.toUpperCase();
     }
 }
